@@ -46,6 +46,35 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  #projects {
+    .project-list {
+      .details-project {
+        .project-image {
+          width: 80%;
+          height: auto;
+          margin: 0 10px;
+        }
+
+        .project-info {
+          width: 100%;
+
+        }
+      }
+
+      .project-two {
+        .project-image {
+          order: 1;
+        }
+        .project-info {
+          order: 2;
+
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -99,5 +128,20 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  #projects {
+    .project-list {
+      .details-project {
+        .project-image {
+          width: 100%;
+        }
+
+        .project-info {
+          width: 100%;
+
+        }
+      }
+    }
   }
 }

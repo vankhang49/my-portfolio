@@ -240,8 +240,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: auto 0;
   img {
     border-radius: 50%;
@@ -399,7 +399,7 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
+.avatar-2 {
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -455,12 +455,15 @@ article .icon {
     height: auto;
     .details-project {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
       width: 100%;
       height: 33.33%;
       padding: 1rem;
       gap: 10px;
       .project-image {
-        width: 50%;
+        width: 45%;
         height: auto;
         margin: 0 10px;
         .project-img {
@@ -477,6 +480,7 @@ article .icon {
 
         .project-title {
           color: var(--color-text);
+          margin: 1rem;
         }
         .info {
           color: var(--color-text);
@@ -498,13 +502,6 @@ article .icon {
     }
   }
 }
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-
 
 /* CONTACT */
 
