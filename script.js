@@ -23,12 +23,22 @@ const imageElement1 = document.getElementById('project-image-slide-1');
 const imageElement2 = document.getElementById('project-image-slide-2');
 const imageElement3 = document.getElementById('project-image-slide-3');
 
-function startSlideshow( imageElement,projectImages) {
+imageElement1.src = bicycleProjectImages[0];
+imageElement2.src = fashionProjectImages[0];
+imageElement3.src = musicProjectImages[0];
+
+
+function startSlideshow(imageElement, projectImages) {
   currentIndex = 0;
   interval = setInterval(() => {
-    currentIndex = (currentIndex + 1) % projectImages.length;
-    imageElement.src = projectImages[currentIndex];
-  }, 1500);
+    imageElement.classList.add('fade-out');
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % projectImages.length;
+      imageElement.src = projectImages[currentIndex];
+      imageElement.classList.remove('fade-out');
+      imageElement.classList.add('fade-in');
+    }, 500);
+  }, 2000);
 }
 
 function stopSlideshow() {
@@ -53,6 +63,6 @@ function toggleMenu() {
 
 var modeSwitch = document.querySelector('.mode-switch');
 modeSwitch.addEventListener('click', function () {
-  document.documentElement.classList.toggle('dark-mode');
+  document.documentElement.classList.toggle('light-mode');
   modeSwitch.classList.toggle('active');
 });
