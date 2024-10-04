@@ -74,7 +74,11 @@
     }
   }
 }
-
+/*@media screen and (max-width: 767px){*/
+/*  #container3D {*/
+/*    position: absolute;*/
+/*  }*/
+/*}*/
 @media screen and (max-width: 600px) {
   #contact,
   footer {
