@@ -61,8 +61,3 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-var modeSwitch = document.querySelector('.mode-switch');
-modeSwitch.addEventListener('click', function () {
-  document.documentElement.classList.toggle('light-mode');
-  modeSwitch.classList.toggle('active');
-});
